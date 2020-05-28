@@ -8,3 +8,5 @@
 Abraham... primera linea del trabajo y/o practica compartida.
 
 
+## PulidoVPE.
+Estosa cambios son mios. Veamos como manejamos el trabajo en grupo y cuanto tiempo tardan en dominarlo.
