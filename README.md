@@ -22,7 +22,8 @@ que bien...tardamos mucho...
 ## AAGB
 Practicando y modificando un poco.
 
-## AAGB Agregando archivo de interfaz.py para que opinen que puedo hacer dentro de esa ventana.
+## AAGB 
+Agregando archivo de interfaz.py para que opinen que puedo hacer dentro de esa ventana.
 
 
 
