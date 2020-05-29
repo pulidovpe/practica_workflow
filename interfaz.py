@@ -4,13 +4,12 @@ from tkinter import messagebox
 
 mywindow =tk.Tk()
 mywindow.title("mi primera ventana en python")
-mywindow.geometry("200x150")
-
+mywindow.geometry("200x200")
 
 def myMessage():
-	messagebox.askquestion("Pregunta", "¿Ya cenaron?...")
+  messagebox.askquestion("Pregunta", "¿Ya cenaron?...")
+	
 btn1 = tk.Button(mywindow, text = "Botón", command = myMessage)
-
 btn1.pack()
-btn1.place(x=150, y=100)
+btn1.place(x=80, y=100)
 mywindow.mainloop()

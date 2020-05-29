@@ -83,3 +83,7 @@ Practicando y modificando un poco.
 
 ## AAGB 
 Agregando archivo de interfaz.py para que opinen que puedo hacer dentro de esa ventana.
+
+## Francisco Sáez
+- Realizada una pequeñita modificación más de forma que de fondo en archivo interfaz.py
+- Agregado el archivo pilas.py, para que lo mejoren mis compañeros
