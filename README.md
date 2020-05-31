@@ -60,36 +60,51 @@ git stash apply
 
 ## En este archivo empezaremos la práctica. 
 
-> Cada quien irá agregando una linea para empezar. O un párrafo. Después los demás lo irán complementando.
+Rama de Francisco
 
-## Anoten su nombre al principio de la línea.
-Abraham... primera linea del trabajo y/o practica compartida.
+Ahora iniciaremos con el uso de las "branch". O, Ramas.
 
+Lo primero que debemos hacer, es aprender que no solo con git pull
+se pueden bajar los cambios actuales de un repositorio.
+Pueden bajar cambios de master o de otra rama. Por ejemplo: develop
+O el nombre que le haya dado su lider de equipo.
 
-## PulidoVPE.
-Estosa cambios son mios. Veamos como manejamos el trabajo en grupo y cuanto tiempo tardan en dominarlo.
+- Para saber que ramas existen en el origin y en tu local. Y en cual estas!
+```Shell
+git branch -av
+```
 
+- Para bajar lo ultimo de una rama, modificando tu "stage"
+O sea, tus archivos seran actualizados.
+```Shell
+git pull origin rama-ejemplo
+```
 
-## Francisco Sáez
-Francisco Sáez: Esta es mi primera contribución en un repositorio en grupo.
-Jefe, be happy!!!
+- Para bajar lo ultimo, sin modificar tu "stage"
+O sea, tus archivos seguiran intactos
+```Shell
+git fetch
+```
 
-## AAGB
-que bien...tardamos mucho...
+- Para bajar solo una rama especifica
+```Shell
+git fetch origin rama-ejemplo
+```
 
-## AAGB
+- Para crear una rama local que sea copia de una rama remota
+Primero deben bajarla con git fetch
+```Shell
+git branch rama-nueva  origin/rama-nueva
+```
 
-Practicando y modificando un poco.
+- Para cambiarte de rama se usa checkout
+```Shell
+git checkout rama-ejemplo
+```
 
-## AAGB 
-Agregando archivo de interfaz.py para que opinen que puedo hacer dentro de esa ventana.
+- Para mezclar/fusionar los cambios de otra rama con la tuya se usa merge
+```Shell
+git checkout rama-mia
 
-## Francisco Sáez
-- Realizada una pequeñita modificación más de forma que de fondo en archivo interfaz.py
-- Agregado el archivo pilas.py, para que lo mejoren mis compañeros
-
-## Francisco Sáez
-- Viendo un curso proporcionado por El Jefe sobre Git para no llegar perdido a las clases y evitar el respectivo regaño.
-
-## AAGB
- Vamos aponer los tips x aca...
+git merge rama-pablo
+```
