@@ -108,3 +108,6 @@ git checkout rama-mia
 
 git merge rama-pablo
 ```
+
+## Francisco Sáez
+ Oh, ohhh... creo que metí la pata! al parecer, también guardé los cambios de mi rama en el master. El Jefe que por favor nos ilumine cómo resolver esos casos!
