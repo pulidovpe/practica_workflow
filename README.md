@@ -90,3 +90,6 @@ Agregando archivo de interfaz.py para que opinen que puedo hacer dentro de esa v
 
 ## Francisco Sáez
 - Viendo un curso proporcionado por El Jefe sobre Git para no llegar perdido a las clases y evitar el respectivo regaño.
+
+## AAGB
+ Vamos aponer los tips x aca...
