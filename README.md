@@ -60,36 +60,68 @@ git stash apply
 
 ## En este archivo empezaremos la práctica. 
 
-> Cada quien irá agregando una linea para empezar. O un párrafo. Después los demás lo irán complementando.
+Rama MASTER
 
-## Anoten su nombre al principio de la línea.
-Abraham... primera linea del trabajo y/o practica compartida.
+Ahora iniciaremos con el uso de las "branch". O, Ramas.
 
+Lo primero que debemos hacer, es aprender que no solo con git pull se pueden bajar los cambios actuales de un repositorio. Pueden bajar cambios de master o de otra rama. Por ejemplo: develop O el nombre que le haya dado su lider de equipo.
 
-## PulidoVPE.
-Estosa cambios son mios. Veamos como manejamos el trabajo en grupo y cuanto tiempo tardan en dominarlo.
+Para saber que ramas existen en el origin y en tu local. Y en cual estas!
+```Shell
+git branch -av
+```
+Para bajar lo ultimo de una rama, modificando tu "stage" O sea, tus archivos seran actualizados.
+```Shell
+git pull origin rama-ejemplo
+```
+Para bajar lo ultimo, sin modificar tu "stage" O sea, tus archivos seguiran intactos
+```Shell
+git fetch
+```
+Para bajar solo una rama especifica
+```Shell
+git fetch origin rama-ejemplo
+```
 
+Para crear una rama local a partir de otra rama local:
+```Shell
+git checkout -b rama-nueva master
+```
 
-## Francisco Sáez
-Francisco Sáez: Esta es mi primera contribución en un repositorio en grupo.
-Jefe, be happy!!!
+Para crear una rama local que sea copia de una rama remota Primero deben bajarla con git fetch
+```Shell
+git branch rama-nueva  origin/rama-nueva
+```
+Para cambiarte de rama se usa checkout
+```Shell
+git checkout rama-ejemplo
+```
+Para mezclar/fusionar los cambios de otra rama con la tuya se usa merge
+```Shell
+git checkout rama-mia
 
-## AAGB
-que bien...tardamos mucho...
+git merge rama-pablo
+```
 
-## AAGB
+#############################################
 
-Practicando y modificando un poco.
+## Deshacer el ultimo merge o git pull
+```Shell
+git reset --hard OCHO_PRIMEROS_CARACTERES_DEL_COMMIT
+```
+## Deshacer el último commit (sin haber hecho push) SIN PERDER LOS CAMBIOS
+```Shell
+git reset --soft HEAD~1
+```
 
-## AAGB 
-Agregando archivo de interfaz.py para que opinen que puedo hacer dentro de esa ventana.
-
-## Francisco Sáez
-- Realizada una pequeñita modificación más de forma que de fondo en archivo interfaz.py
-- Agregado el archivo pilas.py, para que lo mejoren mis compañeros
-
-## Francisco Sáez
-- Viendo un curso proporcionado por El Jefe sobre Git para no llegar perdido a las clases y evitar el respectivo regaño.
-
-## AAGB
- Vamos aponer los tips x aca...
+## Deshacer el último commit 
+===> (habiendo hecho ya hecho un push al repositorio) Ej. github
+```Shell
+git reset HEAD~1
+```
+CORREGIR LOS ARCHIVOS
+```Shell
+git add -A
+git commit -am "xxx"
+git push -f origin rama-destino
+``` 
