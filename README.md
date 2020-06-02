@@ -60,6 +60,7 @@ git stash apply
 
 ## En este archivo empezaremos la práctica. 
 
+<<<<<<< HEAD
 Rama de Francisco
 
 Ahora iniciaremos con el uso de las "branch". O, Ramas.
@@ -87,10 +88,32 @@ git fetch
 ```
 
 - Para bajar solo una rama especifica
+=======
+Rama MASTER
+
+Ahora iniciaremos con el uso de las "branch". O, Ramas.
+
+Lo primero que debemos hacer, es aprender que no solo con git pull se pueden bajar los cambios actuales de un repositorio. Pueden bajar cambios de master o de otra rama. Por ejemplo: develop O el nombre que le haya dado su lider de equipo.
+
+Para saber que ramas existen en el origin y en tu local. Y en cual estas!
+```Shell
+git branch -av
+```
+Para bajar lo ultimo de una rama, modificando tu "stage" O sea, tus archivos seran actualizados.
+```Shell
+git pull origin rama-ejemplo
+```
+Para bajar lo ultimo, sin modificar tu "stage" O sea, tus archivos seguiran intactos
+```Shell
+git fetch
+```
+Para bajar solo una rama especifica
+>>>>>>> 90b8701fe85d66ebc58b3c0dbfac368eb98eba9c
 ```Shell
 git fetch origin rama-ejemplo
 ```
 
+<<<<<<< HEAD
 - Para crear una rama local que sea copia de una rama remota
 Primero deben bajarla con git fetch
 ```Shell
@@ -111,3 +134,47 @@ git merge rama-pablo
 
 ## Francisco Sáez
  Oh, ohhh... creo que metí la pata! al parecer, también guardé los cambios de mi rama en el master. El Jefe que por favor nos ilumine cómo resolver esos casos!
+=======
+Para crear una rama local a partir de otra rama local:
+```Shell
+git checkout -b rama-nueva master
+```
+
+Para crear una rama local que sea copia de una rama remota Primero deben bajarla con git fetch
+```Shell
+git branch rama-nueva  origin/rama-nueva
+```
+Para cambiarte de rama se usa checkout
+```Shell
+git checkout rama-ejemplo
+```
+Para mezclar/fusionar los cambios de otra rama con la tuya se usa merge
+```Shell
+git checkout rama-mia
+
+git merge rama-pablo
+```
+
+#############################################
+
+## Deshacer el ultimo merge o git pull
+```Shell
+git reset --hard OCHO_PRIMEROS_CARACTERES_DEL_COMMIT
+```
+## Deshacer el último commit (sin haber hecho push) SIN PERDER LOS CAMBIOS
+```Shell
+git reset --soft HEAD~1
+```
+
+## Deshacer el último commit 
+===> (habiendo hecho ya hecho un push al repositorio) Ej. github
+```Shell
+git reset HEAD~1
+```
+CORREGIR LOS ARCHIVOS
+```Shell
+git add -A
+git commit -am "xxx"
+git push -f origin rama-destino
+``` 
+>>>>>>> 90b8701fe85d66ebc58b3c0dbfac368eb98eba9c
