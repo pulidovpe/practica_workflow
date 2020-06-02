@@ -118,3 +118,6 @@ git merge rama-pablo
 ## Francisco Sáez
 
 - Realizando la tarea de hoy
+- Agregada una imagen al README.md
+
+![Screenshot](fjss.png)
