@@ -225,3 +225,5 @@ git checkout rama-mia
 git merge rama-pablo
 ```
 >>>>>>> rama-abraham
+## AAGB
+haciendo merge entre ramas
