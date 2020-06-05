@@ -227,3 +227,5 @@ git merge rama-pablo
 >>>>>>> rama-abraham
 ## AAGB
 haciendo merge entre ramas
+## AAGB
+ahora modificando la fusion anterior
