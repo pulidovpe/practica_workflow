@@ -157,7 +157,7 @@ colocar una descripcion mas amplia de lo que hicieron. La siguiente
 documentacion explica la forma de escribir la informacion del commit 
 de una forma más detallada y explicita:
 
-El mensaje de un commit consiste en 3 diferentes partes 
+- El mensaje de un commit consiste en 3 diferentes partes 
 separadas por una linea en blanco: el titulo, un cuerpo 
 opcional y un pie opcional. Algo como lo siguiente:
 -------------
