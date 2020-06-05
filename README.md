@@ -58,6 +58,7 @@ git stash
 git stash apply
 ```
 
+-------------------------------------------
 
 ## En este archivo empezaremos la práctica. 
 
@@ -102,6 +103,7 @@ git merge rama-pablo
 ```
 
 ---------------------------------------
+
 ### Deshacer el ultimo merge o git pull
 ```Shell
 git reset --hard OCHO_PRIMEROS_CARACTERES_DEL_COMMIT
@@ -123,6 +125,7 @@ git push -f origin rama-destino
 ``` 
 
 ---------------------------
+
 ### Resolucion de conflictos
 
 Otra manera para resolver los conflictos es que podemos indicarle de antemano a git que estrategia tomar cuando tiene que decidir un conflicto, esto con las opciones ours y theirs, de esta manera:
@@ -137,6 +140,7 @@ git merge -s recursive -X ours rama-a-fusionar
 
 
 --------------------------------------------
+
 ## Estructura de los Mensajes en los COMMITS
 
 Al crear un commit luego de añadir los archivos modificados/creados
@@ -160,16 +164,20 @@ de una forma más detallada y explicita:
 - El mensaje de un commit consiste en 3 diferentes partes 
 separadas por una linea en blanco: el titulo, un cuerpo 
 opcional y un pie opcional. Algo como lo siguiente:
+
 -------------
+
 type: subject 
 
 body 
 
 footer
+
 -------------
+
 El titulo consiste en el tipo y asunto del mensaje.
 Type / Tipo
------------
+
 El asunto no debe contener mas de 50 caracteres, 
 debe iniciar con una letra mayuscula y no terminar con un punto.
 El tipo es contenido en el titulo y puede ser de alguno de los siguientes casos:
@@ -194,7 +202,9 @@ Resolves: #6113
 Issues: #456, #789
 
 Plantilla ejemplo:
+
 --------------------------------------------------------
+
 feat: Ultima documentacion del Readme
 
 Se agregaron comandos para solucionar conflictos
