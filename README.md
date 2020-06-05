@@ -90,6 +90,11 @@ Primero deben bajarla con git fetch
 git branch rama-nueva  origin/rama-nueva
 ```
 
+### Para crear una rama a partir de otra local
+```Shell
+git checkout -b rama-nueva  master
+```
+
 ### Para cambiarte de rama se usa checkout
 ```Shell
 git checkout rama-ejemplo
