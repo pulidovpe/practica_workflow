@@ -120,3 +120,18 @@ git add -A
 git commit -am "xxx"
 git push -f origin rama-destino
 ``` 
+
+## Resolucion de conflictos
+
+### Otra manera para resolver los conflictos es que podemos indicarle de antemano a git que estrategia 
+tomar cuando tiene que decidir un conflicto, esto con las opciones ours y theirs, de esta manera:
+```Shell	
+git merge -s recursive -X theirs rama-a-fusionar
+```
+
+### Esto cuando queremos que git resuelva el conflicto usando los cambios de la rama a fusionar 
+(theirs o suyos) y cuando queremos que tome los cambios de la rama donde se está fusionando 
+(ours o nuestros): 
+```Shell
+git merge -s recursive -X ours rama-a-fusionar
+```
