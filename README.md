@@ -101,6 +101,7 @@ git checkout rama-mia
 git merge rama-pablo
 ```
 
+---------------------------------------
 ### Deshacer el ultimo merge o git pull
 ```Shell
 git reset --hard OCHO_PRIMEROS_CARACTERES_DEL_COMMIT
@@ -110,28 +111,94 @@ git reset --hard OCHO_PRIMEROS_CARACTERES_DEL_COMMIT
 git reset --soft HEAD~1
 ```
 
-### Deshacer el último commit, habiendo hecho ya hecho un push. Ej. github
+### Deshacer el último commit, habiendo hecho ya un push. Ej. github
 ```Shell
 git reset HEAD~1
 ```
-### Para corregit los archivos
+Luego corriges los archivos y vuelves a subir todo
 ```Shell
 git add -A
 git commit -am "xxx"
 git push -f origin rama-destino
 ``` 
 
-## Resolucion de conflictos
+---------------------------
+### Resolucion de conflictos
 
-### Otra manera para resolver los conflictos es que podemos indicarle de antemano a git que estrategia 
-tomar cuando tiene que decidir un conflicto, esto con las opciones ours y theirs, de esta manera:
+Otra manera para resolver los conflictos es que podemos indicarle de antemano a git que estrategia tomar cuando tiene que decidir un conflicto, esto con las opciones ours y theirs, de esta manera:
 ```Shell	
 git merge -s recursive -X theirs rama-a-fusionar
 ```
 
-### Esto cuando queremos que git resuelva el conflicto usando los cambios de la rama a fusionar 
-(theirs o suyos) y cuando queremos que tome los cambios de la rama donde se está fusionando 
-(ours o nuestros): 
+Esto cuando queremos que git resuelva el conflicto usando los cambios de la rama a fusionar (theirs o suyos) y cuando queremos que tome los cambios de la rama donde se está fusionando (ours o nuestros): 
 ```Shell
 git merge -s recursive -X ours rama-a-fusionar
 ```
+
+
+--------------------------------------------
+## Estructura de los Mensajes en los COMMITS
+
+Al crear un commit luego de añadir los archivos modificados/creados
+y estas por agregar informacion sobre lo que hiciste, lo mas práctico
+es escribir unas pocas palabras para informar sobre el cambio.
+Ej.
+```Shell
+git commit -am "Agregue la funcion eliminar"
+```
+Pero, en proyectos mas grandes y complejos, es mejor utilizar los 
+estandares propuestos. Ej.
+```Shell
+git commit
+```
+Ustedes dirán  "y donde está el mensaje?". Pués al ejecutar el commit
+de esa manera, sin parametros ni nada, les abrirá un editor donde
+colocar una descripcion mas amplia de lo que hicieron. La siguiente 
+documentacion explica la forma de escribir la informacion del commit 
+de una forma más detallada y explicita:
+
+El mensaje de un commit consiste en 3 diferentes partes 
+separadas por una linea en blanco: el titulo, un cuerpo 
+opcional y un pie opcional. Algo como lo siguiente:
+-------------
+type: subject 
+
+body 
+
+footer
+-------------
+El titulo consiste en el tipo y asunto del mensaje.
+Type / Tipo
+-----------
+El asunto no debe contener mas de 50 caracteres, 
+debe iniciar con una letra mayuscula y no terminar con un punto.
+El tipo es contenido en el titulo y puede ser de alguno de los siguientes casos:
+
+- feat: Una nueva caracteristica
+- fix: Se soluciono un bug
+- docs: Se realizaron cambios en la documentacion
+- style: Se aplico formato, comas y puntos faltantes, etc; Sin cambios en el codigo
+- refactor: Refactorizacion del codigo en produccion
+- perf: Un cambio en el código que mejora el desempeño
+- test: Se añadieron pruebas, refactorizacion de pruebas; Sin cambios en el codigo
+- chore: Actualizacion de tareas de build, configuracion del admin. de paquetes; sin cambios en el codigo
+
+Al escribir el cuerpo (Body), requerimos de una linea en blanco 
+entre el titulo y el cuerpo, ademas debemos limitar la longitud 
+de cada linea a no mas de 72 caracteres.
+
+El pie es opcional al igual que el cuerpo, pero este es usado 
+para el seguimiento de los IDs con incidencias. Ej:
+
+Resolves: #6113 
+Issues: #456, #789
+
+Plantilla ejemplo:
+--------------------------------------------------------
+feat: Ultima documentacion del Readme
+
+Se agregaron comandos para solucionar conflictos
+ademas de la informacion sobre las plantillas de
+los mensajes largos en los commit
+
+Issue: #123
