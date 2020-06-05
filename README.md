@@ -207,8 +207,8 @@ Plantilla ejemplo:
 
 feat: Ultima documentacion del Readme
 
-Se agregaron comandos para solucionar conflictos
-ademas de la informacion sobre las plantillas de
-los mensajes largos en los commit
+Se agregaron comandos para solucionar conflictos <br />
+ademas de la informacion sobre las plantillas de <br />
+los mensajes largos en los commit 
 
 Issue: #123
