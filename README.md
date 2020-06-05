@@ -61,7 +61,11 @@ git stash apply
 ## En este archivo empezaremos la práctica. 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Rama de Francisco
+=======
+Rama de Abraham
+>>>>>>> rama-abraham
 
 Ahora iniciaremos con el uso de las "branch". O, Ramas.
 
@@ -74,6 +78,7 @@ O el nombre que le haya dado su lider de equipo.
 ```Shell
 git branch -av
 ```
+<<<<<<< HEAD
 
 - Para bajar lo ultimo de una rama, modificando tu "stage"
 O sea, tus archivos seran actualizados.
@@ -120,10 +125,37 @@ Primero deben bajarla con git fetch
 git branch rama-nueva  origin/rama-nueva
 ```
 
+=======
+
+- Para bajar lo ultimo de una rama, modificando tu "stage"
+O sea, tus archivos seran actualizados.
+```Shell
+git pull origin rama-ejemplo
+```
+
+- Para bajar lo ultimo, sin modificar tu "stage"
+O sea, tus archivos seguiran intactos
+```Shell
+git fetch
+```
+
+- Para bajar solo una rama especifica
+```Shell
+git fetch origin rama-ejemplo
+```
+
+- Para crear una rama local que sea copia de una rama remota
+Primero deben bajarla con git fetch
+```Shell
+git branch rama-nueva  origin/rama-nueva
+```
+
+>>>>>>> rama-abraham
 - Para cambiarte de rama se usa checkout
 ```Shell
 git checkout rama-ejemplo
 ```
+<<<<<<< HEAD
 
 - Para mezclar/fusionar los cambios de otra rama con la tuya se usa merge
 ```Shell
@@ -184,3 +216,12 @@ git push -f origin rama-destino
 modificando readme desde rama_abraham
 
 
+=======
+
+- Para mezclar/fusionar los cambios de otra rama con la tuya se usa merge
+```Shell
+git checkout rama-mia
+
+git merge rama-pablo
+```
+>>>>>>> rama-abraham
