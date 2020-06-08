@@ -180,11 +180,10 @@ git checkout rama-ejemplo
 ```
 git checkout rama-mia
 ```
+
 ```
 git merge rama-pablo
 ```
-
-#############################################
 
 ## Deshacer el último merge o git pull
 
