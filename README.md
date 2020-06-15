@@ -204,7 +204,7 @@ git reset --soft HEAD~1
 git reset HEAD~1
 ```
 
-##CORREGIR LOS ARCHIVOS
+## CORREGIR LOS ARCHIVOS
 
 ```
 git add -A
@@ -311,26 +311,32 @@ los mensajes largos en los commit
 Issue: #123
 
 -----------------
-##Mi bitácora:
+## Mi bitácora:
 
-##01/06/2020
+## 01/06/2020
 
 - Descargada rama-francisco
 - Modificado README.md de rama-francisco
 - Subidos los cambios a rama-francisco
 
-##02/06/2020
+## 02/06/2020
 
 - Realizando la tarea de hoy
 - Agregada una imagen al README.md
 
 ![Francisco](fjss.jpg)
 
-##04/06/2020
+## 04/06/2020
 
 - Ordenando el README.md
 
-##06/06/2020
+## 06/06/2020
 
 - Actualizando el README.md a partir de un merging, lo que ocasionó un conflicto.
+
+
 - El conflicto fue solucionado manualmente.
+
+## 15/06/2020
+
+- Actualizando el repositorio después de muchos días sin internet.
