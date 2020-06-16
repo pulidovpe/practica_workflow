@@ -216,7 +216,7 @@ git commit -am "xxx"
 
 ```
 git push -f origin rama-destino
-``` ---------------------------
+```
 
 ### Resolucion de conflictos
 
