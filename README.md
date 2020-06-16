@@ -333,10 +333,13 @@ Issue: #123
 ## 06/06/2020
 
 - Actualizando el README.md a partir de un merging, lo que ocasionó un conflicto.
-
-
 - El conflicto fue solucionado manualmente.
 
 ## 15/06/2020
 
 - Actualizando el repositorio después de muchos días sin internet.
+- El conflicto fue solucionado manualmente.
+
+## 16/06/2020
+
+- Intentando subir esto de nuevo...
