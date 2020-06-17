@@ -107,36 +107,11 @@ git fetch
 ```
 
 - Para bajar solo una rama especifica
----
-**Rama MASTER**
-
-Ahora iniciaremos con el uso de las "branch"  o Ramas.
-
-Lo primero que debemos hacer, es aprender que no solo con git pull se pueden bajar los cambios actuales de un repositorio. Pueden bajar cambios de master o de otra rama. Por ejemplo: develop O el nombre que le haya dado su lider de equipo.
-
-- Para saber que ramas existen en el origin y en tu local. Y en cual estas!
-
-```
-git branch -av
-```
-
-- Para bajar lo ultimo de una rama, modificando tu "stage" O sea, tus archivos seran actualizados.
-
-```
-git pull origin rama-ejemplo
-```
-
-- Para bajar lo ultimo, sin modificar tu "stage" O sea, tus archivos seguiran intactos
-
-```
-git fetch
-```
-
-- Para bajar solo una rama especifica
 
 ```
 git fetch origin rama-ejemplo
 ```
+
 - Para crear una rama local que sea copia de una rama remota. Primero deben bajarla con git fetch
 
 ```
@@ -150,9 +125,11 @@ git checkout rama-ejemplo
 ```
 
 - Para mezclar/fusionar los cambios de otra rama con la tuya se usa merge
+
 ```
 git checkout rama-mia
 ```
+
 ```
 git merge rama-pablo
 ```
