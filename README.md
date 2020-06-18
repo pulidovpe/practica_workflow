@@ -217,3 +217,12 @@ ademas de la informacion sobre las plantillas de <br />
 los mensajes largos en los commit 
 
 Issue: #123
+
+--------------------------------------------------------
+## Definición de Pull Request
+
+Un pull request es una petición que el propietario de un fork de un repositorio hace al propietario del repositorio original para que este último incorpore los commits que están en el fork. 
+
+La traducción directa sería “Petición de Validación”. Una Pull Request es la acción de validar un código que se va a mergear de una rama a otra. En este proceso de validación pueden entrar los factores que queramos: Builds (validaciones automáticas), asignación de código a tareas, validaciones manuales por parte del equipo, despliegues, etc.
+
+![alt text](practica_workflow\pull.jpg)
