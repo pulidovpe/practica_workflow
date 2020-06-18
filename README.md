@@ -101,8 +101,9 @@ git branch -d rama-vieja
 ```
 
 ### Eliminar una rama remota
+```Shell
 git push origin :rama-vieja
-
+```
 
 ### Para cambiarte de rama se usa checkout
 ```Shell
