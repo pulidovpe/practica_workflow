@@ -95,6 +95,15 @@ git branch rama-nueva  origin/rama-nueva
 git checkout -b rama-nueva  master
 ```
 
+### Eliminar una rama local
+```Shell
+git branch -d rama-vieja
+```
+
+### Eliminar una rama remota
+git push origin :rama-vieja
+
+
 ### Para cambiarte de rama se usa checkout
 ```Shell
 git checkout rama-ejemplo
