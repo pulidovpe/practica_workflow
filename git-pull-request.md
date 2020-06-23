@@ -1,19 +1,18 @@
 # Git Pull / Pull Request
 
-Pull Requests
-La traducción directa sería algo así como “Petición de Validación”. Una Pull Request es la acción de validar un código que se va a mergear de una rama a otra. En este proceso de validación pueden entrar los factores que queramos: Builds (validaciones automáticas), asignación de código a tareas, validaciones manuales por parte del equipo, despliegues, etc.
+PULL REQUEST y FORK
 
-## Git Pull
+➡️ El programador, una vez reciba su issue, puede trabajar directamente en la pagina de GITHUB; en el archivo que quiere modificar. 
 
-La solicitud de extracción es un proceso para que un desarrollador notifique a los miembros del equipo que han completado una función. Una vez que su rama de características está lista, el desarrollador presenta una solicitud de extracción a través de su cuenta de servidor remoto.
-La solicitud de extracción anuncia a todos los miembros del equipo que necesitan revisar el código y fusionarlo en la rama maestra.
+➡️ Pero, YO recomiendo que primero hagan un FORK (Dar click en el boton Fork que esta arriba a la derecha debajo de su nombre de usuario).
 
-Cuando un desarrollador termina de crear (y probar) ya sea una nueva funcionalidad o corrección de bug, solicita integrar su desarrollo al repositorio principal.
+➡️ Esto creara una copia del proyecto en su perfil de github. Descarguenlo y modifiquenlo localmente.
+Despues al terminar y probar que todo le funciona  pueden subirlo  (subira a su cuenta).
 
-Esta solicitud se le conoce como pull request ( o PR ) y pide al resto del equipo desarrollador revisar el código para que ellos: proporcionen sus comentarios, retroalimentación o bien…
-que puedan aprobar o rechazar el PR.
+➡️ En su cuenta, en el repo del FORK esta el boton/enlace de crear un pull request. Esta a mano derecha, debajo del boton CLONE.
 
-Una vez aprobado el pull request, el desarrollador u otro integrante puede unir el nuevo desarrollo al desarrollo principal.
+➡️ En la siguiente pantalla, el pull request les mostrará los cambios de uds en comparacion con el proyecto original.
+Agreguenle algun mensaje explicando los cambios que hicieron y envienlo.
 
-
-Definición tomada de [¿Los pull requests valen la pena?](https://blog.nearsoftjobs.com/qu%C3%A9-son-los-pull-requests-y-por-qu%C3%A9-valen-la-pena-ed98d19d124e).
+➡️ El encargado de la rama develop la revisa, la prueba, etc. Luego, la aprueba o rechaza.
+Al hacer esto, el/ella es quien se encarga de fusionar ese pull request con la rama develop.
