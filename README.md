@@ -238,3 +238,7 @@ La traducción directa sería “Petición de Validación”. Una Pull Request e
 ## Se corrige la ruta de la imagen de muestra
 
 ![pull request](pull.jpg)
+
+
+### Información importante referenta a git-pull-request en el siguiente enlace...
+[Definición git-pull-request](git-pull-request.md)
